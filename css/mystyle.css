@@ -4,50 +4,170 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+       
 }
 
 /* Estilos del Header y Navegación */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
     width: 100%;
-    text-align: right;
-
-}
-.contenedor-imagen {
-    display: grid;
-    place-items: center; /* Centra tanto horizontal como verticalmente */
-    height: 200%; /* Puedes ajustar esta altura */
-    width: 100%;
+    display: flex;
+    padding: 1px 30px;
+    
 }
 
-img {
-    max-width: 100%; /* Asegura que la imagen no sea más grande que su contenedor */
-    height: auto;
-}
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around; /* Distribuye los elementos de manera uniforme */
-    padding: 0;
-    margin: 0;
+    margin-right: 70px;
+    font-size: 50px; /* Cambia este valor al tamaño que desees */   
+    
 }
 
 nav ul li {
     margin: 0;
 }
-
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 5px 60px;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Cambia el color de fondo cuando el ratón pasa por encima */
+    background-color: #f6bc58ad; /* Cambia el color de fondo cuando el ratón pasa por encima */
+}
+
+#quienes-somos {
+    background-color: #f4f4f4; /* Color de fondo suave */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Georgia', serif; /* Estilo de fuente clásico */
+}
+
+/* Estilo para el encabezado principal */
+#quienes-somos h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Estilo para el párrafo general */
+#quienes-somos p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilo para resaltar palabras claves */
+#quienes-somos p strong {
+    color: #6b4226; /* Color marrón medieval */
+    font-weight: bold;
+}
+
+/* Estilo para listas */
+#quienes-somos ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#quienes-somos ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces */
+#quienes-somos a {
+    color: #6b4226;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#quienes-somos a:hover {
+    color: #333; /* Color oscuro al pasar el mouse */
+}
+
+/* Estilo para citas o frases destacadas */
+#quienes-somos blockquote {
+    font-style: italic;
+    color: #888;
+    border-left: 4px solid #6b4226;
+    padding-left: 15px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+.container {
+    text-align: center;
+  
+}
+
+.ruleta-container {
+    position: relative; /* Permite posicionar la flecha sobre la ruleta */
+}
+
+.ruleta {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ffb547d8 0% 16.66%,   /* Castillo de Santa barbara */
+        #4682b4 16.66% 33.33%, /* Castillo de Guadalest */
+        #3cb371 33.33% 50%,    /* Castillo de la Atalalla */
+        #ffd700 50% 66.66%,    /* Castillo Fortaleza de santa Pola */
+        #8a2be2 66.66% 83.33%,  /* Castillo de Biar*/
+        #ff4500 83.33% 100%     /* Castillo de Finestrat */
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: 5px solid #333; /* Añadir borde para mejorar la apariencia */
+    transition: transform 4s ease-out; /* Animación de la ruleta */
+}
+.castillo {
+    position: absolute;
+    width: 50px; /* Ajusta el ancho del texto si es necesario */
+    text-align: center;
+    font-weight: bold;
+    color: #090909; /* Color del texto */
+    
+}
+.flecha {
+    position: sticky;
+    top: -20px; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #ff0000; /* Color de la flecha */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 24px;
 }
 
 /* Pie de página */
