@@ -112,6 +112,7 @@ nav ul li a:hover {
 }
 .container {
     text-align: center;
+    display: grid;
   
 }
 
