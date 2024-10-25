@@ -111,8 +111,7 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 .container {
-    text-align: center;
-    display: grid;
+    text-align: cente   r;
   
 }
 
@@ -138,6 +137,7 @@ nav ul li a:hover {
     margin: 20px auto;
     border: 5px solid #333; /* Añadir borde para mejorar la apariencia */
     transition: transform 4s ease-out; /* Animación de la ruleta */
+    
 }
 .castillo {
     position: absolute;
@@ -170,7 +170,25 @@ button {
     margin-top: 20px;
     font-size: 24px;
 }
+.castillo-seccion{
 
+    display: flex;
+    transform: scale(1.05);
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+  |transition: transform 0.2s ease-in-out;
+}
+.castle img {
+    width: 100%;
+    border-radius: 10px;
+}
+.eventos-medievales{
+    text-align: center;
+}
 /* Pie de página */
 footer {
     text-align: center;

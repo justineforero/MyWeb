@@ -7,49 +7,90 @@
  	<title>Turismo Medieval</title>
        
 </head>
-<body>
+    <body>
 
-    <header>
-        <div class="logo">
-            <img src="../img/logo.jpeg" alt="Logo_Alicante_Medieval" height="150" width="150">
-        </div>        
-            <nav>
-                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li> <a href="quienesomos.html">¿Quienes somos?</a></li>
-                    <li> <a href="Destinos.html">Destinos</a></li>
-                    <li> <a href="Experiencias.html">Experiencias</a></li>
-                    <li> <a href="contacto.html">Contacto</a></li>
-                </ul>    
-            </nav>
+        <header>
+            <div class="logo">
+                <img src="../img/logo.jpeg" alt="Logo_Alicante_Medieval" height="150" width="150">
+            </div>        
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li> <a href="quienesomos.html">¿Quienes somos?</a></li>
+                        <li> <a href="Destinos.html">Destinos</a></li>
+                        <li> <a href="Experiencias.html">Experiencias</a></li>
+                        <li> <a href="contacto.html">Contacto</a></li>
+                    </ul>    
+                </nav>
 
-    </header>
-    <div class="container">
-        <h2>"¡Es hora de una nueva aventura!</h2>
-        <p>Haz girar la ruleta y descubre qué castillo te llevará a un mundo de historia y magia."</p>
-        <div class="ruleta-container">
-            <div id="ruleta" class="ruleta">
-                <div class="castillo" style="transform: rotate(0deg) translate(120px) rotate(0deg);">Guadalest</div>
-                <div class="castillo" style="transform: rotate(60deg) translate(120px) rotate(-60deg);">Santa barbara</div>
-                <div class="castillo" style="transform: rotate(120deg) translate(120px) rotate(-120deg);">Finestrat</div>
-                <div class="castillo" style="transform: rotate(180deg) translate(120px) rotate(-180deg);">Biar</div>
-                <div class="castillo" style="transform: rotate(240deg) translate(120px) rotate(-240deg);">Santa Pola</div>
-                <div class="castillo" style="transform: rotate(300deg) translate(120px) rotate(-300deg);">Atalalla</div>
+        </header>
+        <div class="container">
+            <h2>"¡Es hora de una nueva aventura!</h2>
+            <p>"Haz girar la ruleta y descubre qué castillo te llevará a un mundo de historia y magia."</p>
+            <div class="ruleta-container">
+                <div id="ruleta" class="ruleta">
+                    <div class="castillo" style="transform: rotate(0deg) translate(120px) rotate(0deg);">Guadalest</div>
+                    <div class="castillo" style="transform: rotate(60deg) translate(120px) rotate(-60deg);">Santa barbara</div>
+                    <div class="castillo" style="transform: rotate(180deg) translate(120px) rotate(-180deg);">Biar</div>
+                    <div class="castillo" style="transform: rotate(240deg) translate(120px) rotate(-240deg);">Santa Pola</div>
+                    <div class="castillo" style="transform: rotate(300deg) translate(120px) rotate(-300deg);">Novelda</div>
+                    <div class="castillo" style="transform: rotate(480deg) translate(120px) rotate(-480deg);">Atalaya</div>
+                </div>
+                    <div class="flecha"></div>
             </div>
-            <div class="flecha"></div>
+                    <button id="spinButton">Girar Ruleta</button>
+                    <div id="resultado" class="resultado"></div>
         </div>
-        <button id="spinButton">Girar Ruleta</button>
-        <div id="resultado" class="resultado"></div>
-    </div>
-    <script src="../js/script.js"></script>
-    <footer>
-        <p>© 2024 Alicante Medieval | Contacto: info@alicantemedieval.com</p>
-        <p>Síguenos en:
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">YouTube</a>
-        </p>
-    </footer>
+                    <script src="../js/script.js"></script>
 
-</body>
+                <div class="castillo-seccion">   
+                    <div class="Castillo">
+                        <h2>Castillo de Santa barbara</h2>
+                        <img src="../img/castillo_santabarbara.jpeg" alt="Castillo de Santa Bárbara">
+                        <br></br>  
+                        <p>Ubicado en el monte Benacantil, este castillo es un testigo mudo de la historia de Alicante. Su mercado medieval ofrece una experiencia auténtica con artesanías, gastronomía y espectáculos de cetrería.</p>
+                    </div>
+                    <div class="Castillo">
+                        <h2>Castillo de Guadalest</h2>
+                        <img src="../img/Castillo_Guadalest.jpeg" alt="Castillo de Guadalest">
+                        <br></br>  
+                        <p>Situado en lo alto de un peñasco, el Castillo de Guadalest ofrece vistas espectaculares. En sus inmediaciones se celebra un mercado medieval donde los visitantes pueden disfrutar de productos locales, música y espectáculos medievales.</p>
+                    </div>
+                    <div class="Castillo">
+                        <h2>Castillo de Atalaya</h2>
+                        <img src= "../img/Castillo_Atalaya.jpeg" alt="Castillo de la Atalaya">
+                        <br></br>   
+                        <p>Este castillo histórico domina el horizonte de Orihuela. Su mercado medieval es famoso por la calidad de sus productos artesanales y las actividades para toda la familia, como demostraciones de combate medieval y talleres de alfarería.</p>
+                    </div>
+                    <div class="Castillo">
+                        <h2>Castillo de Biar</h2>
+                        <img src= "../img/Castillo_biar.jpeg" alt="Castillo de Biar">
+                        <br></br>   
+                        <p> castillo de arquitectura defensiva organiza un mercado medieval lleno de vida donde los visitantes pueden descubrir oficios tradicionales y disfrutar de la gastronomía medieval.</p>
+                    </div>
+                   
+                    <div class="Castillo">
+                        <h2>Castillo de Santa Pola</h2>
+                        <img src="../img/Castillo-Santapola.jpeg" alt="Castillo de Santa Pola">
+                        <br></br>  
+                        <p>El Castillo Fortaleza de Santa Pola, ubicado cerca del mar, es un magnífico ejemplo de arquitectura renacentista. Su mercado medieval se celebra en las calles cercanas, donde se recrea la vida cotidiana de la época con trajes, música y productos artesanales.</p>
+                    </div>
+
+                    <div class="Castillo">
+                        <h2>Castillo de la Mola- Novelda</h2>
+                        <img src="../img/Castillo_novelda.jpeg" alt="Castillo de la Mola Novelda">
+                        <br></br>  
+                        <p>El Castillo de la Mola está ubicado sobre un pequeño cerro a 360m de altitud con relación al mar y dista 3km de la población de Novelda, en dirección noroeste. Desde este cerro domina visualmente el valle medio del Vinalopó y forma parte de la red de castillos y torres que durante la Edad Media constituyeron un importante sistema de control y defensa del territorio andalusí frente a los reinos cristianos de Castilla y Aragón.</p>
+                    </div>
+            </div>
+        <footer>
+            <p>© 2024 Alicante Medieval | Contacto: info@alicantemedieval.com</p>
+            <p>Síguenos en:
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">YouTube</a>
+            </p>
+        </footer>
+
+    </body>
 </html>
