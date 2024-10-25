@@ -1,10 +1,10 @@
 const castillos = [
     "Castillo de Santa barbara",
     "Castillo de Guadalest",
-    "Castillo de la Atalalla",
+    "Castillo de la Atalaya",
     "Castillo Fortaleza de santa Pola",
     "Castillo de Biar",
-    "Castillo de Finestrat"
+    "Castillo de Novelda"
 ];
 
 document.getElementById('spinButton').addEventListener('click', function() {
