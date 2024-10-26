@@ -1,46 +1,134 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-       
 }
 
-/* Estilos del Header y Navegación */
+.contenedor {
+    width: 100%;              /* Ancho del contenido */
+    /*max-width: 1000px;       /* Máximo ancho */
+    margin: 0 auto;          /* Centrado horizontal */
+    /* background-color: rgb(94, 25, 186);*/
+}
+
 header {
     display: flex;
-    justify-content: space-between;
-    background-color: #ffffff;
-    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%; 
+    margin: 0 auto; 
+    /*background-color: rgb(109, 190, 141);*/
+}
+.logo {
+    width: 200px;
+    display: flex;                    /* Flexbox para centrado */
+    justify-content: center;          /* Centra horizontalmente */
+    align-items: center;              /* Centra verticalmente */
+}
+
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;  
+}
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 15px/23px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.dropdownmenu li:hover a {
+	background: #000000;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+
+.contenedor2 {
+    width: 80%;         
+    margin: 0 auto;
     display: flex;
-    padding: 1px 30px;
-    
+    flex-wrap: wrap; 
 }
 
-nav ul {
-    list-style: none;
+.contenedor2 > div {
+    width: 50%;                 /* Cada elemento ocupa el 50% del ancho del contenedor */
+    box-sizing: border-box;     /* Asegura que el padding y el borde no aumenten el ancho total */
+    padding: 10px;              /* Espacio interno opcional */
+}
+
+.contenedor3 {
+    width: 80%;         
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos de manera uniforme */
-    margin-right: 70px;
-    font-size: 50px; /* Cambia este valor al tamaño que desees */   
-    
+    flex-wrap: wrap; 
+   
+}
+.contenedor3 > div {
+    width: 50%;                 /* Cada elemento ocupa el 50% del ancho del contenedor */
+    box-sizing: border-box;     /* Asegura que el padding y el borde no aumenten el ancho total */
+    padding: 10px;              /* Espacio interno opcional */
+}
+.contenedor4 {
+    width: 80%;         
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+   
+}
+.contenedor4 > div {
+    width: 50%;                 /* Cada elemento ocupa el 50% del ancho del contenedor */
+    box-sizing: border-box;     /* Asegura que el padding y el borde no aumenten el ancho total */
+    padding: 10px;              /* Espacio interno opcional */
 }
 
-nav ul li {
-    margin: 0;
-}
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    padding: 5px 60px;
-    display: block;
-    font-size: 20px;
+/* Estilos para el encabezado h1 */
+h1 {
+    font-size: 2.5em;               /* Tamaño de fuente grande */
+    color: #333;                    /* Color del texto */
+    text-align: center;             /* Centrar el texto */
+    margin-bottom: 20px;           /* Espacio debajo del encabezado */
+    font-family: 'Arial', sans-serif; /* Fuente */
 }
 
-nav ul li a:hover {
-    background-color: #f6bc58ad; /* Cambia el color de fondo cuando el ratón pasa por encima */
+/* Estilos para los párrafos p */
+p {
+    font-size: 1.2em;               /* Tamaño de fuente */
+    line-height: 1.6;               /* Espaciado entre líneas */
+    color: #666;                    /* Color del texto */
+    margin: 0 0 15px;              /* Espacio inferior */
+    font-family: 'Georgia', serif; /* Fuente */
 }
+
+
+
 
 #quienes-somos {
     background-color: #f4f4f4; /* Color de fondo suave */
@@ -110,10 +198,7 @@ nav ul li a:hover {
     margin: 20px 0;
     line-height: 1.6;
 }
-.container {
-    text-align: cente   r;
-  
-}
+
 
 .ruleta-container {
     position: relative; /* Permite posicionar la flecha sobre la ruleta */
@@ -137,7 +222,6 @@ nav ul li a:hover {
     margin: 20px auto;
     border: 5px solid #333; /* Añadir borde para mejorar la apariencia */
     transition: transform 4s ease-out; /* Animación de la ruleta */
-    
 }
 .castillo {
     position: absolute;
@@ -170,25 +254,7 @@ button {
     margin-top: 20px;
     font-size: 24px;
 }
-.castillo-seccion{
 
-    display: flex;
-    transform: scale(1.05);
-    justify-content: center;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 10px;
-  |transition: transform 0.2s ease-in-out;
-}
-.castle img {
-    width: 100%;
-    border-radius: 10px;
-}
-.eventos-medievales{
-    text-align: center;
-}
 /* Pie de página */
 footer {
     text-align: center;
@@ -198,4 +264,9 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    font-size: 1em;               /* Tamaño de fuente */
+    color: #fefefe;
 }
