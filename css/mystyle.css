@@ -128,8 +128,6 @@ p {
 }
 
 
-
-
 #quienes-somos {
     background-color: #f4f4f4; /* Color de fondo suave */
     padding: 40px 20px;
@@ -199,9 +197,16 @@ p {
     line-height: 1.6;
 }
 
+.contenedor5 h2{
+    text-align: center;
+}
+.contenedor5 p{
+    text-align: center;
+}
 
 .ruleta-container {
     position: relative; /* Permite posicionar la flecha sobre la ruleta */
+    
 }
 
 .ruleta {
@@ -222,6 +227,7 @@ p {
     margin: 20px auto;
     border: 5px solid #333; /* Añadir borde para mejorar la apariencia */
     transition: transform 4s ease-out; /* Animación de la ruleta */
+    
 }
 .castillo {
     position: absolute;
@@ -229,6 +235,7 @@ p {
     text-align: center;
     font-weight: bold;
     color: #090909; /* Color del texto */
+    
     
 }
 .flecha {
@@ -241,18 +248,29 @@ p {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 20px solid #ff0000; /* Color de la flecha */
+    
 }
 
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center;     /* Centra el botón verticalmente (si fuera necesario) */
+    width: 100%;             /* Ocupa el 100% del ancho de la pantalla */
+}
+
+/* Estilo del botón */
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 20px;
+    background-color: rgb(241, 228, 48);
+    border: none;
+    border-radius: 5px;
 }
-
 .resultado {
     margin-top: 20px;
     font-size: 24px;
+    text-align: center;
 }
 
 /* Pie de página */
